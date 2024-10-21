@@ -13,7 +13,7 @@ def main():
     target_train_loader = mnistm.mnistm_train_loader
 
     if torch.cuda.is_available():
-        get_free_gpu()
+        #get_free_gpu()
         print('Running GPU : {}'.format(torch.cuda.current_device()))
         encoder = model.Extractor().cuda()
         classifier = model.Classifier().cuda()
